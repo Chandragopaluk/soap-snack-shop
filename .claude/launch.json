@@ -2,9 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "soap-snack-shop",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
+      "name": "dev",
+      "runtimeExecutable": "/bin/bash",
+      "runtimeArgs": ["-c", "eval \"$(/opt/homebrew/bin/brew shellenv)\" && npm run dev"],
       "port": 3000
     }
   ]

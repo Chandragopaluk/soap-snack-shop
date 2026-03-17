@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import useStore from "@/lib/store";
+import { useStore } from "@/lib/store";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

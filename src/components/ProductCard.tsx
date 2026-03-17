@@ -22,8 +22,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <div className="overflow-hidden">
           <div className="transform transition-transform duration-300 group-hover:scale-105">
             <ProductImage
-              category={product.category}
-              name={product.name}
+              product={product}
               size="small"
             />
           </div>
