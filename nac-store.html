@@ -1,243 +1,866 @@
-Natural and Clean — by NAC Ltd
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Natural and Clean — by NAC Ltd</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* PALETTE C — PREMIUM PASTEL — PERMANENT */
+    --neera: #2d5a3d;
+    --neera-light: #cce8d5;
+    --neera-accent: #95C9A5;
+    --neera-mid: #e8f5ee;
+    --luth: #7a4500;
+    --luth-light: #fde5bb;
+    --luth-accent: #F5B65A;
+    --luth-mid: #fff4e0;
+    --mirth: #5a1f7a;
+    --mirth-light: #e8d5f2;
+    --mirth-accent: #C5A0D5;
+    --mirth-mid: #f5edfb;
+    --luveco: #1a4f72;
+    --luveco-light: #d0e8f7;
+    --luveco-accent: #8FC4E8;
+    --luveco-mid: #eaf4fb;
+    --dark: #1c1c1c;
+    --mid: #666;
+    --light: #FAF8F2;
+    --white: #ffffff;
+    --border: #ede8df;
+    --gold: #b8963e;
+    --text-soft: #888;
+  }
 
-🚚 Free delivery on orders over £35 across the UK — Natural. Artisan. Clean.
-Natural and Clean
-BY NAC LTD
-🛒 Basket (0) 
-🌿 UK MADE · NATURALLY SOURCED
-Good for you. Kind to the planet.
-Four thoughtfully crafted brands — herbal teas, protein snacks, artisan treats and eco home products. All made with natural ingredients and delivered to your door.
-Shop All Products
-Explore Our Brands
-🌿
-Neera
-Health & Wellness
-💪
-Luth
-Protein Snacks
-🍫
-Mirth
-Sweets & Treats
-♻️
-LuvEco
-Eco Household
-🇬🇧
-UK Based & Dispatched
-🌿
-100% Natural Ingredients
-📦
-Free Delivery Over £35
-♻️
-Plastic-Free Packaging
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-NEERA
-Health & Wellness
-Herbal teas, artisan soaps and natural personal care
-View all Neera →
-NEERA
-🌾
-HERBAL TEA
-Fennel Seed Tea
-Soothing loose-leaf fennel. Aids digestion and calms bloating naturally.
-Caffeine Free
-Digestive
-50g
-£4.99
-Add to basket
-NEERA
-🌱
-HERBAL TEA
-Jeera (Cumin) Tea
-Traditional Ayurvedic cumin brew. Supports metabolism and gut health.
-Caffeine Free
-Metabolism
-50g
-£4.99
-Add to basket
-NEERA
-🌿
-HERBAL TEA
-Dhania (Coriander) Tea
-Gentle coriander infusion. Refreshing, anti-inflammatory and naturally sweet.
-Anti-Inflammatory
-Detox
-50g
-£4.99
-Add to basket
-NEERA
-🧼
-ARTISAN SOAP
-Coconut & Turmeric Bar
-Cold-pressed coconut oil and golden turmeric. Brightening and deeply moisturising.
-Vegan
-Handmade
-100g
-£6.99
-Add to basket
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--white);
+    color: var(--dark);
+    font-size: 15px;
+    line-height: 1.6;
+  }
 
-LUTH
-Protein & Savoury Snacks
-High-protein flavoured seeds and healthy savoury snacks
-View all Luth →
-LUTH
-🎃
-FLAVOURED SEEDS
-Masala Pumpkin Seeds
-Slow-roasted with bold Indian spices. High protein, satisfying crunch.
-High Protein
-Gluten Free
-150g
-£3.99
-Add to basket
-LUTH
-🌻
-FLAVOURED SEEDS
-Chilli & Lime Sunflower Seeds
-Zingy sunflower seeds roasted with chilli and lime. Addictively good.
-Vegan
-Zinc Rich
-150g
-£3.49
-Add to basket
-LUTH
-🥜
-FLAVOURED SEEDS
-Spiced Edamame
-Dry-roasted edamame with sea salt and smoked paprika. Plant-based protein.
-Plant Protein
-No Added Sugar
-100g
-£2.99
-Add to basket
-LUTH
-🫘
-FLAVOURED SEEDS
-Wasabi Roasted Soy Beans
-Crunchy soy beans with a kick of wasabi. Protein-rich with a serious punch.
-High Protein
-Fibre Rich
-100g
-£2.99
-Add to basket
+  /* ── TOP BAR ── */
+  .topbar {
+    background: var(--neera);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px;
+    letter-spacing: 0.5px;
+  }
 
-MIRTH
-Sweets, Snacks & Chocolate
-Joy in every bite — savoury snacks, sweets and artisan chocolate
-View all Mirth →
-MIRTH
-🍫
-CHOCOLATE
-Dark Chocolate & Cardamom
-Rich 70% dark chocolate with fragrant green cardamom. A South Asian twist.
-70% Cocoa
-Vegan
-90g
-£3.99
-Add to basket
-MIRTH
-🍬
-SWEETS
-Rose & Pistachio Fudge
-Creamy fudge with rosewater and crushed pistachios. Inspired by South Asian mithai.
-Handmade
-Small Batch
-200g
-£5.49
-Add to basket
-MIRTH
-🥜
-SAVOURY SNACKS
-Masala Mixed Nuts
-Cashews, almonds and peanuts slow-roasted in our signature masala blend.
-No Artificial Flavours
-Gluten Free
-150g
-£4.99
-Add to basket
-MIRTH
-🍪
-BISCUITS
-Coconut & Jaggery Cookies
-Baked cookies sweetened with unrefined jaggery and desiccated coconut.
-No Refined Sugar
-Baked
-150g
-£3.49
-Add to basket
+  /* ── NAV ── */
+  nav {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 2rem;
+  }
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    gap: 1rem;
+  }
+  .logo {
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+  .logo-main {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1;
+    letter-spacing: -0.3px;
+  }
+  .logo-main span { color: var(--neera); }
+  .logo-sub {
+    font-size: 10px;
+    color: var(--text-soft);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .nav-links {
+    display: flex;
+    gap: 0;
+    list-style: none;
+  }
+  .nav-links a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: all 0.15s;
+    color: var(--mid);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .nav-links a:hover { background: var(--light); color: var(--dark); }
+  .nav-links a .dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .nav-links a.neera .dot { background: var(--neera-accent); }
+  .nav-links a.luth .dot { background: var(--luth-accent); }
+  .nav-links a.mirth .dot { background: var(--mirth-accent); }
+  .nav-links a.luveco .dot { background: var(--luveco-accent); }
+  .nav-right { display: flex; align-items: center; gap: 10px; }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    padding: 6px 14px;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-soft);
+    width: 200px;
+  }
+  .cart-btn {
+    background: var(--neera);
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
 
-LUVECO
-Eco Household & Cleaning
-Planet-friendly products for a cleaner, greener home
-View all LuvEco →
-LUVECO
-🥥
-KITCHEN
-Coconut Eco Scourer — 3 Pack
-100% natural coconut fibre. Tough on grease, gentle on surfaces, plastic-free.
-Plastic Free
-Biodegradable
-3 Pack
-£3.99
-Add to basket
-LUVECO
-🧴
-CLEANING
-Eco Multi-Surface Cleaner
-Plant-based concentrate. One bottle makes up to 10 litres. Safe for family and pets.
-Plant Based
-Concentrated
-500ml
-£5.99
-Add to basket
-LUVECO
-🧻
-PAPER HYGIENE
-Recycled Kitchen Roll — 2 Pack
-100% recycled paper. Absorbent, strong and better for the planet.
-Recycled
-FSC Certified
-2 Rolls
-£2.49
-Add to basket
-LUVECO
-🌬️
-HOME FRAGRANCE
-Natural Reed Diffuser — Eucalyptus
-Long-lasting natural diffuser with eucalyptus and mint. No synthetic fragrances.
-Natural Oils
-8 Week Fragrance
-100ml
-£8.99
-Add to basket
-Why Natural and Clean?
-🌿
-Always Natural
-No synthetic additives, no hidden nasties. Every ingredient is there for a reason.
-🤲
-Handcrafted with Care
-Small batch production. Made slowly, with attention to every detail.
-♻️
-Eco Committed
-Plastic-free packaging, sustainable sourcing, zero-waste manufacturing.
-🇬🇧
-Proudly UK Based
-Based in London. Delivering across the UK. Supporting British businesses.
-Natural and Clean
-BY NAC LTD
-Four brands, one mission — better products for you and the planet. Based in London, delivering across the UK.
-OUR BRANDS
-Neera — Wellness
-Luth — Snacks
-Mirth — Treats
-LuvEco — Home
-HELP
-Delivery Info
-Returns Policy
-Contact Us
-FAQs
-CONTACT
-hello@naclimited.co.uk
-Instagram
-Facebook
-© 2026 NAC Ltd. All rights reserved. Registered in England & Wales. Trading as Natural and Clean.
-Privacy Policy · Terms & Conditions
+  /* ── HERO ── */
+  .hero {
+    background: var(--light);
+    padding: 3.5rem 2rem;
+  }
+  .hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--neera-light);
+    color: var(--neera);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 1.25rem;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--dark);
+    margin-bottom: 1rem;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--neera);
+  }
+  .hero-desc {
+    color: var(--mid);
+    font-size: 15px;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    max-width: 480px;
+  }
+  .hero-ctas {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    background: var(--neera);
+    color: white;
+    padding: 11px 24px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-outline {
+    background: transparent;
+    color: var(--dark);
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1.5px solid var(--border);
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+  }
+  /* Hero right — brand tiles */
+  .hero-brands-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .hero-brand-tile {
+    border-radius: 18px;
+    padding: 1.25rem;
+    text-decoration: none;
+    transition: transform 0.2s;
+    display: block;
+  }
+  .hero-brand-tile:hover { transform: translateY(-3px); }
+  .hero-brand-tile.neera { background: var(--neera-light); }
+  .hero-brand-tile.luth { background: var(--luth-light); }
+  .hero-brand-tile.mirth { background: var(--mirth-light); }
+  .hero-brand-tile.luveco { background: var(--luveco-light); }
+  .tile-icon { font-size: 2rem; margin-bottom: 8px; }
+  .tile-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  .neera .tile-name { color: var(--neera); }
+  .luth .tile-name { color: var(--luth); }
+  .mirth .tile-name { color: var(--mirth); }
+  .luveco .tile-name { color: var(--luveco); }
+  .tile-sub { font-size: 11px; color: var(--mid); font-weight: 500; }
+
+  /* ── USP STRIP ── */
+  .usp-strip {
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 1.25rem 2rem;
+  }
+  .usp-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    text-align: center;
+  }
+  .usp-item { display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .usp-icon { font-size: 1.1rem; }
+  .usp-text { font-size: 12px; font-weight: 600; color: var(--mid); }
+
+  /* ── SECTION ── */
+  .section { padding: 3.5rem 2rem; }
+  .section.alt { background: var(--light); }
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+
+  .section-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 1.75rem;
+  }
+  .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .neera .section-tag { color: var(--neera); }
+  .luth .section-tag { color: var(--luth); }
+  .mirth .section-tag { color: var(--mirth); }
+  .luveco .section-tag { color: var(--luveco); }
+
+  .section-tag-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+  }
+  .neera .section-tag-dot { background: var(--neera-accent); }
+  .luth .section-tag-dot { background: var(--luth-accent); }
+  .mirth .section-tag-dot { background: var(--mirth-accent); }
+  .luveco .section-tag-dot { background: var(--luveco-accent); }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.2;
+  }
+  .section-desc { font-size: 13px; color: var(--mid); margin-top: 3px; }
+  .view-all {
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 7px 16px;
+    border-radius: 20px;
+    border: 1.5px solid;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .neera .view-all { color: var(--neera); border-color: var(--neera-accent); }
+  .neera .view-all:hover { background: var(--neera); color: white; }
+  .luth .view-all { color: var(--luth); border-color: var(--luth-accent); }
+  .luth .view-all:hover { background: var(--luth); color: white; }
+  .mirth .view-all { color: var(--mirth); border-color: var(--mirth-accent); }
+  .mirth .view-all:hover { background: var(--mirth); color: white; }
+  .luveco .view-all { color: var(--luveco); border-color: var(--luveco-accent); }
+  .luveco .view-all:hover { background: var(--luveco); color: white; }
+
+  /* ── PRODUCT GRID ── */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  .product-card {
+    background: var(--white);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .product-card:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+  }
+  .product-img {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    position: relative;
+  }
+  .neera .product-img { background: var(--neera-mid); }
+  .luth .product-img { background: var(--luth-mid); }
+  .mirth .product-img { background: var(--mirth-mid); }
+  .luveco .product-img { background: var(--luveco-mid); }
+
+  .product-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+  }
+  .neera .product-badge { background: var(--neera); }
+  .luth .product-badge { background: var(--luth); }
+  .mirth .product-badge { background: var(--mirth); }
+  .luveco .product-badge { background: var(--luveco); }
+
+  .product-body { padding: 14px 16px 16px; }
+  .product-cat {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .neera .product-cat { color: var(--neera-accent); }
+  .luth .product-cat { color: var(--luth-accent); }
+  .mirth .product-cat { color: var(--mirth-accent); }
+  .luveco .product-cat { color: var(--luveco-accent); }
+
+  .product-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 5px;
+    line-height: 1.25;
+  }
+  .product-desc { font-size: 12px; color: var(--mid); line-height: 1.5; margin-bottom: 10px; }
+  .product-tags { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 12px; }
+  .tag {
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  .neera .tag { background: var(--neera-light); color: var(--neera); }
+  .luth .tag { background: var(--luth-light); color: var(--luth); }
+  .mirth .tag { background: var(--mirth-light); color: var(--mirth); }
+  .luveco .tag { background: var(--luveco-light); color: var(--luveco); }
+
+  .product-footer { display: flex; align-items: center; justify-content: space-between; }
+  .price { font-size: 1.15rem; font-weight: 700; color: var(--dark); }
+  .add-btn {
+    border: none;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    transition: opacity 0.15s;
+    color: white;
+  }
+  .neera .add-btn { background: var(--neera); }
+  .luth .add-btn { background: var(--luth); }
+  .mirth .add-btn { background: var(--mirth); }
+  .luveco .add-btn { background: var(--luveco); }
+  .add-btn:hover { opacity: 0.85; }
+
+  /* ── TRUST BAND ── */
+  .trust-band {
+    background: var(--neera-mid);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  .trust-inner { max-width: 900px; margin: 0 auto; }
+  .trust-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--neera);
+    margin-bottom: 2rem;
+  }
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+  .trust-item { padding: 1.25rem; background: white; border-radius: 14px; }
+  .trust-icon { font-size: 1.8rem; margin-bottom: 8px; }
+  .trust-item-title { font-size: 13px; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+  .trust-item-desc { font-size: 12px; color: var(--mid); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--light);
+    border-top: 1px solid var(--border);
+    padding: 3rem 2rem 1.5rem;
+  }
+  .footer-inner { max-width: 1200px; margin: 0 auto; }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1.5rem;
+  }
+  .footer-logo-main {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 2px;
+  }
+  .footer-logo-main span { color: var(--neera); }
+  .footer-logo-sub { font-size: 10px; color: var(--text-soft); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 12px; }
+  .footer-tagline { font-size: 13px; color: var(--mid); line-height: 1.65; }
+  .footer-col h4 { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--dark); margin-bottom: 12px; }
+  .footer-col a { display: block; font-size: 13px; color: var(--mid); text-decoration: none; margin-bottom: 8px; transition: color 0.15s; }
+  .footer-col a:hover { color: var(--neera); }
+  .footer-bottom { font-size: 12px; color: var(--text-soft); display: flex; justify-content: space-between; align-items: center; }
+
+  @media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-brands-grid { grid-template-columns: repeat(4,1fr); }
+    .usp-inner { grid-template-columns: repeat(2,1fr); }
+    .trust-grid { grid-template-columns: repeat(2,1fr); }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .nav-links { display: none; }
+    .search-bar { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">🚚 Free delivery on orders over £35 across the UK — Natural. Artisan. Clean.</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-main">Natural and <span>Clean</span></div>
+      <div class="logo-sub">by NAC Ltd</div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#neera" class="neera"><span class="dot"></span>Neera</a></li>
+      <li><a href="#luth" class="luth"><span class="dot"></span>Luth</a></li>
+      <li><a href="#mirth" class="mirth"><span class="dot"></span>Mirth</a></li>
+      <li><a href="#luveco" class="luveco"><span class="dot"></span>LuvEco</a></li>
+      <li><a href="#">All Products</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="search-bar">🔍 Search products...</div>
+      <button class="cart-btn">🛒 Basket (0)</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag">🌿 UK Made · Naturally Sourced</div>
+      <h1>Good for you.<br><em>Kind to the planet.</em></h1>
+      <p class="hero-desc">Four thoughtfully crafted brands — herbal teas, protein snacks, artisan treats and eco home products. All made with natural ingredients and delivered to your door.</p>
+      <div class="hero-ctas">
+        <a href="#neera" class="btn-primary">Shop All Products</a>
+        <a href="#luveco" class="btn-outline">Explore Our Brands</a>
+      </div>
+    </div>
+    <div class="hero-brands-grid">
+      <a href="#neera" class="hero-brand-tile neera">
+        <div class="tile-icon">🌿</div>
+        <div class="tile-name">Neera</div>
+        <div class="tile-sub">Health & Wellness</div>
+      </a>
+      <a href="#luth" class="hero-brand-tile luth">
+        <div class="tile-icon">💪</div>
+        <div class="tile-name">Luth</div>
+        <div class="tile-sub">Protein Snacks</div>
+      </a>
+      <a href="#mirth" class="hero-brand-tile mirth">
+        <div class="tile-icon">🍫</div>
+        <div class="tile-name">Mirth</div>
+        <div class="tile-sub">Sweets & Treats</div>
+      </a>
+      <a href="#luveco" class="hero-brand-tile luveco">
+        <div class="tile-icon">♻️</div>
+        <div class="tile-name">LuvEco</div>
+        <div class="tile-sub">Eco Household</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- USP STRIP -->
+<div class="usp-strip">
+  <div class="usp-inner">
+    <div class="usp-item"><span class="usp-icon">🇬🇧</span><span class="usp-text">UK Based & Dispatched</span></div>
+    <div class="usp-item"><span class="usp-icon">🌿</span><span class="usp-text">100% Natural Ingredients</span></div>
+    <div class="usp-item"><span class="usp-icon">📦</span><span class="usp-text">Free Delivery Over £35</span></div>
+    <div class="usp-item"><span class="usp-icon">♻️</span><span class="usp-text">Plastic-Free Packaging</span></div>
+  </div>
+</div>
+
+<!-- NEERA -->
+<section class="section neera" id="neera">
+  <div class="section-inner">
+    <div class="section-head">
+      <div>
+        <div class="section-tag neera"><span class="section-tag-dot neera"></span>Neera</div>
+        <div class="section-title">Health &amp; Wellness</div>
+        <div class="section-desc">Herbal teas, artisan soaps and natural personal care</div>
+      </div>
+      <a href="#" class="view-all neera">View all Neera →</a>
+    </div>
+    <div class="product-grid">
+      <div class="product-card neera">
+        <div class="product-img neera"><span class="product-badge neera">Neera</span>🌾</div>
+        <div class="product-body neera">
+          <div class="product-cat neera">Herbal Tea</div>
+          <div class="product-name">Fennel Seed Tea</div>
+          <div class="product-desc">Soothing loose-leaf fennel. Aids digestion and calms bloating naturally.</div>
+          <div class="product-tags neera"><span class="tag neera">Caffeine Free</span><span class="tag neera">Digestive</span><span class="tag neera">50g</span></div>
+          <div class="product-footer"><span class="price">£4.99</span><button class="add-btn neera">Add to basket</button></div>
+        </div>
+      </div>
+      <div class="product-card neera">
+        <div class="product-img neera"><span class="product-badge neera">Neera</span>🌱</div>
+        <div class="product-body neera">
+          <div class="product-cat neera">Herbal Tea</div>
+          <div class="product-name">Jeera (Cumin) Tea</div>
+          <div class="product-desc">Traditional Ayurvedic cumin brew. Supports metabolism and gut health.</div>
+          <div class="product-tags neera"><span class="tag neera">Caffeine Free</span><span class="tag neera">Metabolism</span><span class="tag neera">50g</span></div>
+          <div class="product-footer"><span class="price">£4.99</span><button class="add-btn neera">Add to basket</button></div>
+        </div>
+      </div>
+      <div class="product-card neera">
+        <div class="product-img neera"><span class="product-badge neera">Neera</span>🌿</div>
+        <div class="product-body neera">
+          <div class="product-cat neera">Herbal Tea</div>
+          <div class="product-name">Dhania (Coriander) Tea</div>
+          <div class="product-desc">Gentle coriander infusion. Refreshing, anti-inflammatory and naturally sweet.</div>
+          <div class="product-tags neera"><span class="tag neera">Anti-Inflammatory</span><span class="tag neera">Detox</span><span class="tag neera">50g</span></div>
+          <div class="product-footer"><span class="price">£4.99</span><button class="add-btn neera">Add to basket</button></div>
+        </div>
+      </div>
+      <div class="product-card neera">
+        <div class="product-img neera"><span class="product-badge neera">Neera</span>🧼</div>
+        <div class="product-body neera">
+          <div class="product-cat neera">Artisan Soap</div>
+          <div class="product-name">Coconut &amp; Turmeric Bar</div>
+          <div class="product-desc">Cold-pressed coconut oil and golden turmeric. Brightening and deeply moisturising.</div>
+          <div class="product-tags neera"><span class="tag neera">Vegan</span><span class="tag neera">Handmade</span><span class="tag neera">100g</span></div>
+          <div class="product-footer"><span class="price">£6.99</span><button class="add-btn neera">Add to basket</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LUTH -->
+<section class="section alt luth" id="luth">
+  <div class="section-inner">
+    <div class="section-head">
+      <div>
+        <div class="section-tag luth"><span class="section-tag-dot luth"></span>Luth</div>
+        <div class="section-title">Protein &amp; Savoury Snacks</div>
+        <div class="section-desc">High-protein flavoured seeds and healthy savoury snacks</div>
+      </div>
+      <a href="#" class="view-all luth">View all Luth →</a>
+    </div>
+    <div class="product-grid">
+      <div class="product-card luth">
+        <div class="product-img luth"><span class="product-badge luth">Luth</span>🎃</div>
+        <div class="product-body luth">
+          <div class="product-cat luth">Flavoured Seeds</div>
+          <div class="product-name">Masala Pumpkin Seeds</div>
+          <div class="product-desc">Slow-roasted with bold Indian spices. High protein, satisfying crunch.</div>
+          <div class="product-tags luth"><span class="tag luth">High Protein</span><span class="tag luth">Gluten Free</span><span class="tag luth">150g</span></div>
+          <div class="product-footer"><span class="price">£3.99</span><button class="add-btn luth">Add to basket</button></div>
+        </div>
+      </div>
+      <div class="product-card luth">
+        <div class="product-img luth"><span class="product-badge luth">Luth</span>🌻</div>
+        <div class="product-body luth">
+          <div class="product-cat luth">Flavoured Seeds</div>
+          <div class="product-name">Chilli &amp; Lime Sunflower Seeds</div>
+          <div class="product-desc">Zingy sunflower seeds roasted with chilli and lime. Addictively good.</div>
+          <div class="product-tags luth"><span class="tag luth">Vegan</span><span class="tag luth">Zinc Rich</span><span class="tag luth">150g</span></div>
+          <div class="product-footer"><span class="price">£3.49</span><button class="add-btn luth">Add to basket</button></div>
+        </div>
+      </div>
+      <div class="product-card luth">
+        <div class="product-img luth"><span class="product-badge luth">Luth</span>🥜</div>
+        <div class="product-body luth">
+          <div class="product-cat luth">Flavoured Seeds</div>
+          <div class="product-name">Spiced Edamame</div>
+          <div class="product-desc">Dry-roasted edamame with sea salt and smoked paprika. Plant-based protein.</div>
+          <div class="product-tags luth"><span class="tag luth">Plant Protein</span><span class="tag luth">No Added Sugar</span><span class="tag luth">100g</span></div>
+          <div class="product-footer"><span class="price">£2.99</span><button class="add-btn luth">Add to basket</button></div>
+        </div>
+      </div>
+      <div class="product-card luth">
+        <div class="product-img luth"><span class="product-badge luth">Luth</span>🫘</div>
+        <div class="product-body luth">
+          <div class="product-cat luth">Flavoured Seeds</div>
+          <div class="product-name">Wasabi Roasted Soy Beans</div>
+          <div class="product-desc">Crunchy soy beans with a kick of wasabi. Protein-rich with a serious punch.</div>
+          <div class="product-tags luth"><span class="tag luth">High Protein</span><span class="tag luth">Fibre Rich</span><span class="tag luth">100g</span></div>
+          <div class="product-footer"><span class="price">£2.99</span><button class="add-btn luth">Add to basket</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MIRTH -->
+<section class="section mirth" id="mirth">
+  <div class="section-inner">
+    <div class="section-head">
+      <div>
+        <div class="section-tag mirth"><span class="section-tag-dot mirth"></span>Mirth</div>
+        <div class="section-title">Sweets, Snacks &amp; Chocolate</div>
+        <div class="section-desc">Joy in every bite — savoury snacks, sweets and artisan chocolate</div>
+      </div>
+      <a href="#" class="view-all mirth">View all Mirth →</a>
+    </div>
+    <div class="product-grid">
+      <div class="product-card mirth">
+        <div class="product-img mirth"><span class="product-badge mirth">Mirth</span>🍫</div>
+        <div class="product-body mirth">
+          <div class="product-cat mirth">Chocolate</div>
+          <div class="product-name">Dark Chocolate &amp; Cardamom</div>
+          <div class="product-desc">Rich 70% dark chocolate with fragrant green cardamom. A South Asian twist.</div>
+          <div class="product-tags mirth"><span class="tag mirth">70% Cocoa</span><span class="tag mirth">Vegan</span><span class="tag mirth">90g</span></div>
+          <div class="product-footer"><span class="price">£3.99</span><button class="add-btn mirth">Add to basket</button></div>
+        </div>
+      </div>
+      <div class="product-card mirth">
+        <div class="product-img mirth"><span class="product-badge mirth">Mirth</span>🍬</div>
+        <div class="product-body mirth">
+          <div class="product-cat mirth">Sweets</div>
+          <div class="product-name">Rose &amp; Pistachio Fudge</div>
+          <div class="product-desc">Creamy fudge with rosewater and crushed pistachios. Inspired by South Asian mithai.</div>
+          <div class="product-tags mirth"><span class="tag mirth">Handmade</span><span class="tag mirth">Small Batch</span><span class="tag mirth">200g</span></div>
+          <div class="product-footer"><span class="price">£5.49</span><button class="add-btn mirth">Add to basket</button></div>
+        </div>
+      </div>
+      <div class="product-card mirth">
+        <div class="product-img mirth"><span class="product-badge mirth">Mirth</span>🥜</div>
+        <div class="product-body mirth">
+          <div class="product-cat mirth">Savoury Snacks</div>
+          <div class="product-name">Masala Mixed Nuts</div>
+          <div class="product-desc">Cashews, almonds and peanuts slow-roasted in our signature masala blend.</div>
+          <div class="product-tags mirth"><span class="tag mirth">No Artificial Flavours</span><span class="tag mirth">Gluten Free</span><span class="tag mirth">150g</span></div>
+          <div class="product-footer"><span class="price">£4.99</span><button class="add-btn mirth">Add to basket</button></div>
+        </div>
+      </div>
+      <div class="product-card mirth">
+        <div class="product-img mirth"><span class="product-badge mirth">Mirth</span>🍪</div>
+        <div class="product-body mirth">
+          <div class="product-cat mirth">Biscuits</div>
+          <div class="product-name">Coconut &amp; Jaggery Cookies</div>
+          <div class="product-desc">Baked cookies sweetened with unrefined jaggery and desiccated coconut.</div>
+          <div class="product-tags mirth"><span class="tag mirth">No Refined Sugar</span><span class="tag mirth">Baked</span><span class="tag mirth">150g</span></div>
+          <div class="product-footer"><span class="price">£3.49</span><button class="add-btn mirth">Add to basket</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LUVECO -->
+<section class="section alt luveco" id="luveco">
+  <div class="section-inner">
+    <div class="section-head">
+      <div>
+        <div class="section-tag luveco"><span class="section-tag-dot luveco"></span>LuvEco</div>
+        <div class="section-title">Eco Household &amp; Cleaning</div>
+        <div class="section-desc">Planet-friendly products for a cleaner, greener home</div>
+      </div>
+      <a href="#" class="view-all luveco">View all LuvEco →</a>
+    </div>
+    <div class="product-grid">
+      <div class="product-card luveco">
+        <div class="product-img luveco"><span class="product-badge luveco">LuvEco</span>🥥</div>
+        <div class="product-body luveco">
+          <div class="product-cat luveco">Kitchen</div>
+          <div class="product-name">Coconut Eco Scourer — 3 Pack</div>
+          <div class="product-desc">100% natural coconut fibre. Tough on grease, gentle on surfaces, plastic-free.</div>
+          <div class="product-tags luveco"><span class="tag luveco">Plastic Free</span><span class="tag luveco">Biodegradable</span><span class="tag luveco">3 Pack</span></div>
+          <div class="product-footer"><span class="price">£3.99</span><button class="add-btn luveco">Add to basket</button></div>
+        </div>
+      </div>
+      <div class="product-card luveco">
+        <div class="product-img luveco"><span class="product-badge luveco">LuvEco</span>🧴</div>
+        <div class="product-body luveco">
+          <div class="product-cat luveco">Cleaning</div>
+          <div class="product-name">Eco Multi-Surface Cleaner</div>
+          <div class="product-desc">Plant-based concentrate. One bottle makes up to 10 litres. Safe for family and pets.</div>
+          <div class="product-tags luveco"><span class="tag luveco">Plant Based</span><span class="tag luveco">Concentrated</span><span class="tag luveco">500ml</span></div>
+          <div class="product-footer"><span class="price">£5.99</span><button class="add-btn luveco">Add to basket</button></div>
+        </div>
+      </div>
+      <div class="product-card luveco">
+        <div class="product-img luveco"><span class="product-badge luveco">LuvEco</span>🧻</div>
+        <div class="product-body luveco">
+          <div class="product-cat luveco">Paper Hygiene</div>
+          <div class="product-name">Recycled Kitchen Roll — 2 Pack</div>
+          <div class="product-desc">100% recycled paper. Absorbent, strong and better for the planet.</div>
+          <div class="product-tags luveco"><span class="tag luveco">Recycled</span><span class="tag luveco">FSC Certified</span><span class="tag luveco">2 Rolls</span></div>
+          <div class="product-footer"><span class="price">£2.49</span><button class="add-btn luveco">Add to basket</button></div>
+        </div>
+      </div>
+      <div class="product-card luveco">
+        <div class="product-img luveco"><span class="product-badge luveco">LuvEco</span>🌬️</div>
+        <div class="product-body luveco">
+          <div class="product-cat luveco">Home Fragrance</div>
+          <div class="product-name">Natural Reed Diffuser — Eucalyptus</div>
+          <div class="product-desc">Long-lasting natural diffuser with eucalyptus and mint. No synthetic fragrances.</div>
+          <div class="product-tags luveco"><span class="tag luveco">Natural Oils</span><span class="tag luveco">8 Week Fragrance</span><span class="tag luveco">100ml</span></div>
+          <div class="product-footer"><span class="price">£8.99</span><button class="add-btn luveco">Add to basket</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAND -->
+<div class="trust-band">
+  <div class="trust-inner">
+    <div class="trust-title">Why Natural and Clean?</div>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon">🌿</div>
+        <div class="trust-item-title">Always Natural</div>
+        <div class="trust-item-desc">No synthetic additives, no hidden nasties. Every ingredient is there for a reason.</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🤲</div>
+        <div class="trust-item-title">Handcrafted with Care</div>
+        <div class="trust-item-desc">Small batch production. Made slowly, with attention to every detail.</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">♻️</div>
+        <div class="trust-item-title">Eco Committed</div>
+        <div class="trust-item-desc">Plastic-free packaging, sustainable sourcing, zero-waste manufacturing.</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🇬🇧</div>
+        <div class="trust-item-title">Proudly UK Based</div>
+        <div class="trust-item-desc">Based in London. Delivering across the UK. Supporting British businesses.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-main">Natural and <span>Clean</span></div>
+        <div class="footer-logo-sub">by NAC Ltd</div>
+        <div class="footer-tagline">Four brands, one mission — better products for you and the planet. Based in London, delivering across the UK.</div>
+      </div>
+      <div class="footer-col">
+        <h4>Our Brands</h4>
+        <a href="#neera">Neera — Wellness</a>
+        <a href="#luth">Luth — Snacks</a>
+        <a href="#mirth">Mirth — Treats</a>
+        <a href="#luveco">LuvEco — Home</a>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <a href="#">Delivery Info</a>
+        <a href="#">Returns Policy</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQs</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="#">hello@naclimited.co.uk</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 NAC Ltd. All rights reserved. Registered in England & Wales. Trading as Natural and Clean.</span>
+      <span>Privacy Policy · Terms & Conditions</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
